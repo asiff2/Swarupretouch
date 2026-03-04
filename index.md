@@ -109,13 +109,18 @@ nav a {
 .mockup {
     width:300px;
     height:400px;
-    background:var(--surface);
     border-radius:20px;
-    backdrop-filter:blur(12px);
+    overflow:hidden;
+    box-shadow:0 40px 80px rgba(0,0,0,0.4);
     animation: float 6s ease-in-out infinite;
     transform-style:preserve-3d;
 }
-
+.mockup img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+}
 @keyframes float {
     0% { transform:rotateY(-15deg) rotateX(5deg) translateY(0); }
     50% { transform:rotateY(15deg) rotateX(-5deg) translateY(-20px); }
@@ -204,7 +209,9 @@ footer {
     <a href="#contact" class="btn">Start Project</a>
 
     <div class="mockup-container">
-        <div class="mockup"></div>
+        <div class="mockup">
+        <img src="images/model1.jpg" alt="AI Fashion Model 1">
+        </div>
     </div>
 </section>
 
