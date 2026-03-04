@@ -107,7 +107,7 @@ nav a {
 }
 
 .mockup {
-    width:300px;
+    width:400px;
     height:400px;
     border-radius:20px;
     overflow:hidden;
@@ -254,7 +254,7 @@ footer {
     <form action="https://formspree.io/f/maqdzbal" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Tell us about your collection"></textarea>
+        <textarea name="message" rows="4" placeholder="Tell us about your social media handles"></textarea>
         <button class="btn" type="submit">Submit</button>
     </form>
 </section>
