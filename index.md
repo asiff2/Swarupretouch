@@ -135,7 +135,7 @@ section {
     padding:100px 20px;
 }
 
-/* ---------------- CASE STUDY CARDS ---------------- */
+/* ---------------- CLIENTS TESTIMONIALS & RATINGS ---------------- */
 
 .grid {
     display:grid;
@@ -195,7 +195,7 @@ footer {
 <nav>
     <strong>Swarup Retouch</strong>
     <ul>
-        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#cases">Client Testimonials</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><span class="toggle" onclick="toggleMode()">Toggle Mode</span></li>
@@ -221,7 +221,7 @@ footer {
         <div class="card">
             <h3>Luxury Ethnic Brand</h3>
             <p>Reduced photoshoot costs by 75% while scaling 50+ SKUs.</p>
-            <a href="case-study-1.html">Read Case Study →</a>
+            <a href="case-study-1.html">submit your testimonials & Ratings →</a>
         </div>
         <div class="card">
             <h3>D2C Streetwear Startup</h3>
