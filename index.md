@@ -135,7 +135,7 @@ section {
     padding:100px 20px;
 }
 
-/* ---------------- CLIENTS TESTIMONIALS & RATINGS ---------------- */
+/* ---------------- CASE STUDIES ---------------- */
 
 .grid {
     display:grid;
@@ -195,7 +195,7 @@ footer {
 <nav>
     <strong>Swarup Retouch</strong>
     <ul>
-        <li><a href="#cases">Client Testimonials</a></li>
+        <li><a href="#cases">Case Studies</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><span class="toggle" onclick="toggleMode()">Toggle Mode</span></li>
@@ -219,8 +219,8 @@ footer {
     <h2>Case Studies</h2>
     <div class="grid">
         <div class="card">
-            <h3>Luxury Ethnic Brand</h3>
-            <p>Reduced photoshoot costs by 75% while scaling 50+ SKUs.</p>
+            <h3>your voice matters</h3>
+            <p>Click below :</p>
             <a href="case-study-1.html">submit your testimonials & Ratings →</a>
         </div>
         <div class="card">
