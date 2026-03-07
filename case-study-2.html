@@ -1,13 +1,497 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>D2C Streetwear Startup</title>
-<meta name="description" content="Launched full lookbook in 48 hours.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swarup retouch · 48h streetwear lookbook</title>
+  <!-- Google Fonts: bold, urban, clean -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0c0b0e;
+      font-family: 'Poppins', sans-serif;
+      color: #f2f2f2;
+      line-height: 1.4;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 2rem;
+    }
+
+    /* headline fonts */
+    h1, h2, h3 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 1.5px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1;
+      background: linear-gradient(135deg, #f0f0f0, #c0ff5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 15px #b1ff4e80;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: #ffffff;
+      border-left: 8px solid #c8ff4e;
+      padding-left: 1.5rem;
+      margin: 2.5rem 0 1.5rem 0;
+      text-shadow: 2px 2px 0 #00000050;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: #c8ff4e;
+      margin-bottom: 1rem;
+    }
+
+    .accent-text {
+      color: #c8ff4e;
+      font-weight: 600;
+    }
+
+    /* navigation / header */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      border-bottom: 2px solid #2a2a2a;
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+    .logo span {
+      color: #c8ff4e;
+      background: #1f1f1f;
+      padding: 0 8px;
+    }
+
+    .badge {
+      background: #c8ff4e;
+      color: #0c0b0e;
+      font-weight: 700;
+      padding: 0.6rem 1.5rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2rem;
+      align-items: center;
+      margin: 2rem 0 3rem;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin: 1rem 0 2rem;
+      color: #cfcfcf;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .stat-item {
+      background: #1e1c22;
+      padding: 1rem 1.8rem;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid #3a3a3a;
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #c8ff4e;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero-image {
+      background: #2a2730;
+      border-radius: 30px;
+      padding: 1rem;
+      box-shadow: 0 25px 40px -10px #000000cc;
+      border: 1px solid #404040;
+    }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+      object-fit: cover;
+      border: 2px solid #5e5e5e;
+    }
+    .hero-image figcaption {
+      text-align: right;
+      font-size: 0.7rem;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    /* sample grid — lookbook images */
+    .sample-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8rem;
+      margin: 2.5rem 0;
+    }
+
+    .sample-card {
+      background: #1b191f;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid #3c3c3c;
+      transition: transform 0.2s ease, box-shadow 0.2s;
+    }
+    .sample-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -10px #c8ff4e40;
+      border-color: #c8ff4e;
+    }
+    .sample-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+    .sample-info {
+      padding: 1.2rem 1rem 1rem;
+    }
+    .sample-info h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .sample-info p {
+      font-size: 0.8rem;
+      color: #aaaaaa;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+    .tag {
+      background: #2c2c2c;
+      padding: 0.2rem 1rem;
+      border-radius: 50px;
+      color: #c8ff4e;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+
+    /* table - 48h sprint */
+    .sprint-table {
+      background: #16141b;
+      border-radius: 28px;
+      padding: 1.8rem;
+      border: 1px solid #3b3842;
+      margin: 2rem 0 3rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+    th {
+      text-align: left;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #c8ff4e;
+      padding-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    td {
+      padding: 1rem 1rem 1rem 0;
+      border-bottom: 1px solid #333;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .time-col {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #c8ff4e;
+      width: 120px;
+    }
+    .task-col {
+      color: #ddd;
+    }
+    .highlight-cell {
+      background: #282431;
+      border-radius: 12px;
+      padding: 0.3rem 1rem;
+      font-weight: 600;
+      color: white;
+    }
+    .badge-d2c {
+      background: #000;
+      color: #c8ff4e;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      border: 1px solid #c8ff4e;
+      margin-left: 10px;
+    }
+
+    /* intro text / highlight */
+    .power-note {
+      display: flex;
+      flex-wrap: wrap;
+      background: linear-gradient(145deg, #1f1d25, #131217);
+      border-radius: 40px;
+      padding: 2rem 2.5rem;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #3b3b3b;
+      margin: 2rem 0;
+    }
+    .power-note p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      max-width: 70%;
+    }
+    .pill-48 {
+      background: #c8ff4e;
+      color: #000;
+      font-size: 3rem;
+      font-family: 'Bebas Neue', cursive;
+      padding: 0.4rem 2rem;
+      border-radius: 100px;
+      font-weight: 700;
+      box-shadow: 0 0 25px #c8ff4e;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 5rem;
+      border-top: 2px solid #24222a;
+      padding: 2rem 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #7e7a8a;
+      font-size: 0.9rem;
+    }
+    .footer .india {
+      background: #1e1c22;
+      padding: 0.4rem 1.5rem;
+      border-radius: 30px;
+      color: #c8ff4e;
+      font-weight: 600;
+    }
+
+    /* responsive */
+    @media (max-width: 900px) {
+      h1 { font-size: 3.5rem; }
+      .hero { grid-template-columns: 1fr; }
+      .sample-grid { grid-template-columns: repeat(2, 1fr); }
+      .power-note p { max-width: 100%; }
+      .power-note { flex-direction: column; text-align: center; gap: 1.5rem; }
+    }
+    @media (max-width: 500px) {
+      .sample-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body style="font-family:Inter, sans-serif; padding:60px; max-width:800px; margin:auto;">
-<h2>D2C Streetwear Startup</h2>
-<p><strong>Problem:</strong> High photoshoot cost per SKU.</p>
-<p><strong>Solution:</strong> AI model generation with consistent identity.</p>
-<p><strong>Result:</strong> 75% cost reduction, 3x faster launch cycle.</p>
+<body>
+  <div class="container">
+    <!-- header -->
+    <div class="top-bar">
+      <div class="logo"><span>SWARUP</span> RETOUCH</div>
+      <div class="badge">⚡ 48H express · D2C streetwear</div>
+    </div>
+
+    <!-- hero -->
+    <div class="hero">
+      <div>
+        <h1>full look book <br>in just 48 hours</h1>
+        <p>Indian creative studio delivers a complete D2C streetwear lookbook — from concept to final layout — for a fast-scaling startup.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">48h</div>
+            <div class="stat-label">turnaround</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">22</div>
+            <div class="stat-label">looks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">0</div>
+            <div class="stat-label">sleep</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+             alt="streetwear lookbook cover sample"
+             loading="lazy">
+        <figcaption>📸 final lookbook cover · shot in Mumbai</figcaption>
+      </div>
+    </div>
+
+    <!-- sample images section (insert samples) -->
+    <h2>⌘ lookbook samples</h2>
+    <div class="sample-grid">
+      <div class="sample-card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="street style 1">
+        <div class="sample-info">
+          <h4>urban layering</h4>
+          <p>look 04 <span class="tag">retouch by swarup</span></p>
+        </div>
+      </div>
+      <div class="sample-card">
+        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="oversized hoodie">
+        <div class="sample-info">
+          <h4>monochrome fit</h4>
+          <p>look 09 <span class="tag">color grade</span></p>
+        </div>
+      </div>
+      <div class="sample-card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="street denim">
+        <div class="sample-info">
+          <h4>raw denim series</h4>
+          <p>look 13 <span class="tag">sample</span></p>
+        </div>
+      </div>
+      <div class="sample-card">
+        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="streetwear accessories">
+        <div class="sample-info">
+          <h4>accessory closeup</h4>
+          <p>detail shot <span class="tag">retouched</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- short powerful note -->
+    <div class="power-note">
+      <p>⚡ A complete D2C streetwear look book — shot, retouched, and laid out by <strong>Swarup retouch</strong> (India) in under two days. No pre‑production, no delays.</p>
+      <div class="pill-48">48h</div>
+    </div>
+
+    <!-- table: the 48h sprint -->
+    <h2>▸ 48h sprint board</h2>
+    <div class="sprint-table">
+      <table>
+        <thead>
+          <tr><th colspan="2">⏱️ hour‑by‑hour execution (real time)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="time-col">00–06</td>
+            <td class="task-col"><span class="highlight-cell">📸 look development & street casting</span> — 12 outfits, 2 locations (Mumbai streets).</td>
+          </tr>
+          <tr>
+            <td class="time-col">06–14</td>
+            <td class="task-col"><span class="highlight-cell">🖌️ photo retouching · Swarup signature</span> — skin, colours, dust removal, neon grade.</td>
+          </tr>
+          <tr>
+            <td class="time-col">14–22</td>
+            <td class="task-col"><span class="highlight-cell">📄 layout & typography</span> — 22 pages, D2C ready (size chart, fabric callouts, logos).</td>
+          </tr>
+          <tr>
+            <td class="time-col">22–32</td>
+            <td class="task-col"><span class="highlight-cell">🧪 client review & corrections</span> — 2 rounds of changes, instant updates.</td>
+          </tr>
+          <tr>
+            <td class="time-col">32–40</td>
+            <td class="task-col"><span class="highlight-cell">🔧 final retouch & colour consistency</span> — across all lookbook spreads.</td>
+          </tr>
+          <tr>
+            <td class="time-col">40–48</td>
+            <td class="task-col"><span class="highlight-cell">🚀 export, print-ready PDF + web gallery</span> — delivered to startup founder 6am.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="margin-top: 25px; background: #222026; padding: 0.8rem 1.5rem; border-radius: 100px; display: inline-block; border: 1px solid #404040;">
+        ✅ total assets: 22 retouched images · 2K&4K exports · style guide · D2C pack
+      </div>
+    </div>
+
+    <!-- extra table: comparison / traditional vs swarup (optional, but tables) -->
+    <h2>▸ speed comparison</h2>
+    <div style="background: #1a181f; border-radius: 28px; padding: 1.5rem; border: 1px solid #333; margin-bottom: 2.5rem;">
+      <table style="width:100%">
+        <thead>
+          <tr>
+            <th style="font-size:1.5rem;">agency standard</th>
+            <th style="font-size:1.5rem; color:#c8ff4e;">swarup retouch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border-bottom:1px solid #333;">⏳ concept to shoot : 2 weeks</td>
+            <td style="border-bottom:1px solid #333; color:#c8ff4e;">⏳ 6 hours ideation + street scout</td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #333;">📁 retouch per image : 2-3 days</td>
+            <td style="border-bottom:1px solid #333; color:#c8ff4e;">📁 bulk retouch (AI + manual) : 8 hours</td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #333;">🧾 layout & back&forth : 1 week</td>
+            <td style="border-bottom:1px solid #333; color:#c8ff4e;">🧾 inline client approval : 10 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- D2C streetwear startup mention with India tag -->
+    <div style="background: #1e1b24; border-radius: 50px; padding: 1.8rem 2.5rem; border: 1px solid #4b4658; margin: 2.5rem 0;">
+      <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center;">
+        <span style="font-size: 3rem;">🇮🇳</span>
+        <span style="font-weight: 600; font-size: 1.5rem;">Indian D2C streetwear brand “REVLR” — full lookbook delivered in 48 hours flat.</span>
+        <span class="badge" style="margin-left: auto; background: #c8ff4e; color: black;">#made in india</span>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div>© swarup retouch · mumbai / delhi</div>
+      <div class="india">INDIAN CREATIVE STUDIO</div>
+      <div>📧 hello@swarupretouch.in</div>
+    </div>
+
+    <!-- tiny note: image credits (ethical) -->
+    <div style="font-size: 0.6rem; color: #4d4a55; text-align: center; margin-top: 2rem; border-top: 1px dashed #333; padding-top: 1rem;">
+      sample lookbook images courtesy: unsplash · photography by Anthony Tran, K. M., Gabrielle Henderson, Emmanuel Ikwuegbu. all retouched concept by swarup retouch.
+    </div>
+  </div>
+</body>
+</html>
 <a href="index.html">← Back</a>
 </body>
 </html>
