@@ -1,14 +1,289 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
-<title>Case Study | Luxury Ethnic Brand</title>
-<meta name="description" content="How Swarup Retouch scaled 50 SKUs for a luxury ethnic brand using AI.">
+<title>Swarup retouch | AI image editor</title>
+<meta name="description" content="Testimonial and Rating.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share your testimonial · Formspree</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background: #f0f5fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 30px 50px -20px rgba(0,20,40,0.3);
+            padding: 2.5rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            background: linear-gradient(145deg, #164863, #2a5c8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.4rem;
+        }
+        .subhead {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+            border-left: 5px solid #3b82f6;
+            background: #f0f7ff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 1rem;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1e293b;
+            display: block;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 1.2rem;
+            font-size: 1rem;
+            transition: 0.15s;
+            background: #fcfcfd;
+        }
+        input:focus, textarea:focus {
+            border-color: #2563eb;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+        }
+        /* star rating */
+        .rating-group {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 0.3rem;
+            margin: 0.5rem 0 0.2rem;
+        }
+        .rating-group input {
+            display: none;
+        }
+        .rating-group label {
+            font-size: 2.3rem;
+            color: #cbd5e1;
+            cursor: pointer;
+            transition: color 0.1s;
+            margin: 0;
+            line-height: 1;
+            text-transform: none;
+            font-weight: 400;
+        }
+        .rating-group label:hover,
+        .rating-group label:hover ~ label,
+        .rating-group input:checked ~ label {
+            color: #fbbf24;
+        }
+        .hint {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-top: 0.4rem;
+        }
+        .testimonial-box {
+            background: #f9fcff;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border: 2px solid #dbeafe;
+        }
+        .agreement {
+            background: #ecfdf5;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            border: 2px solid #a7f3d0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .agreement input {
+            width: 1.6rem;
+            height: 1.6rem;
+            accent-color: #10b981;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+        .agreement label {
+            font-weight: 600;
+            color: #065f46;
+            text-transform: none;
+            font-size: 1rem;
+        }
+        .agreement small {
+            display: block;
+            font-weight: 400;
+            color: #047857;
+            margin-top: 0.3rem;
+            font-size: 0.9rem;
+        }
+        .btn {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 1.2rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 3rem;
+            width: 100%;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 10px 15px -5px #1e3a8a80;
+        }
+        .btn:hover {
+            background: #2563eb;
+            transform: scale(1.02);
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .full-width { grid-column: span 1; }
+            .card { padding: 1.8rem; }
+        }
+    </style>
 </head>
-<body style="font-family:Inter, sans-serif; padding:60px; max-width:800px; margin:auto;">
-<h1>Luxury Ethnic Brand Case Study</h1>
-<p><strong>Problem:</strong> High photoshoot cost per SKU.</p>
-<p><strong>Solution:</strong> AI model generation with consistent identity.</p>
-<p><strong>Result:</strong> 75% cost reduction, 3x faster launch cycle.</p>
+<body>
+<div class="card">
+    <h1>✶ Share your experience</h1>
+    <div class="subhead">
+        Your story helps others make confident decisions. Fill in the fields below – we’ll handle the rest.
+    </div>
+
+    <!-- 
+        IMPORTANT: Replace YOUR_FORM_ID with your actual Formspree form ID.
+        Example: action="https://formspree.io/f/xjvngakl"
+    -->
+    <form action="https://formspree.io/f/maqdzbal" method="POST" id="testimonialForm">
+
+        <!-- Honeypot to reduce spam (optional but recommended) -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Custom subject for the email you'll receive -->
+        <input type="hidden" name="_subject" value="New testimonial from website">
+
+        <div class="form-grid">
+            <!-- Full name (required) -->
+            <div>
+                <label for="name">Full name *</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Taylor Chen" required>
+            </div>
+
+            <!-- Company (optional) -->
+            <div>
+                <label for="company">Company / organisation</label>
+                <input type="text" id="company" name="company" placeholder="Acme Inc.">
+            </div>
+
+            <!-- Position / role -->
+            <div>
+                <label for="position">Position / role</label>
+                <input type="text" id="position" name="position" placeholder="Product Manager">
+            </div>
+
+            <!-- Email (optional but helpful for follow‑up) -->
+            <div>
+                <label for="email">Email (optional)</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+
+            <!-- Rating (radio stars) -->
+            <div class="full-width">
+                <label>Your rating *</label>
+                <div class="rating-group">
+                    <input type="radio" name="rating" id="star5" value="5 stars"><label for="star5" title="5 stars">★</label>
+                    <input type="radio" name="rating" id="star4" value="4 stars"><label for="star4" title="4 stars">★</label>
+                    <input type="radio" name="rating" id="star3" value="3 stars" checked><label for="star3" title="3 stars">★</label>
+                    <input type="radio" name="rating" id="star2" value="2 stars"><label for="star2" title="2 stars">★</label>
+                    <input type="radio" name="rating" id="star1" value="1 star"><label for="star1" title="1 star">★</label>
+                </div>
+                <div class="hint">⭐ tap a star – 1 = poor, 5 = excellent</div>
+            </div>
+
+            <!-- Written testimonial with pre‑filled content -->
+            <div class="full-width testimonial-box">
+                <label for="testimonial">📝 Your testimonial *</label>
+                <textarea id="testimonial" name="testimonial" rows="5" required>Before working with [Company/Name], I struggled with [specific problem]. From the first conversation, everything felt professional. They delivered [specific result] ahead of schedule, and now we’re seeing [measurable outcome]. I’d definitely recommend them to anyone needing [type of help].</textarea>
+                <div class="hint">✎ Edit the template above – real, specific stories are the most powerful.</div>
+            </div>
+        </div> <!-- end grid -->
+
+        <!-- Agreement: share testimonial + work details -->
+        <div class="agreement">
+            <input type="checkbox" id="permission" name="agreement" value="yes" required>
+            <label for="permission">
+                I agree to share this testimonial and relevant details of the work/job
+                <small>This includes my name, company, role, and the story above. We may edit for brevity and display it on our website, social media, or other marketing materials. You can withdraw anytime by contacting us.</small>
+            </label>
+        </div>
+
+        <button type="submit" class="btn">✉ submit via Formspree</button>
+    </form>
+
+    <div class="footer-note">
+        Your information will be sent securely through Formspree. We’ll never share your email.
+    </div>
+</div>
+
+<script>
+    // Optional: you can add a simple confirmation before submit (not required)
+    document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+        const name = document.getElementById('name').value.trim();
+        if (!name) {
+            alert('Please enter your name.');
+            e.preventDefault();
+            return;
+        }
+        // rating is already pre‑selected (star3 default)
+        if (!document.getElementById('permission').checked) {
+            alert('You must agree to share your testimonial and work details.');
+            e.preventDefault();
+            return;
+        }
+        // Formspree will handle the rest – you can show a custom message if you want,
+        // but it's better to let Formspree show its own thank‑you page.
+    });
+</script>
+</body>
+</html>
 <a href="index.html">← Back</a>
 </body>
 </html>
